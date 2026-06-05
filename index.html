@@ -2163,40 +2163,46 @@ infrastructure remain limited.</p>
 <h3>Study Limitations</h3>
 <p>Our analysis is subject to several methodological limitations that
 must be critically assessed.</p>
-<p><strong>Internal Validity:</strong> * <em>Omitted Variable Bias
-(OVB):</em> Despite controlling for GDP, clean water, undernourishment,
-and employing country fixed effects, unobserved time-varying factors
-such as short-term institutional shifts, environmental shocks, and
-intra-country inequality remain unaccounted for and may still bias the
-estimates. * <em>Simultaneity and Reverse Causality:</em> Health
-outcomes and healthcare spending are simultaneously determined;
-healthier populations might afford to invest differently in health, and
-aging populations require higher expenditures. While a 5-year lag for
+<p><strong>Internal Validity:</strong></p>
+<ul>
+<li><strong>Omitted Variable Bias (OVB):</strong> Despite controlling
+for GDP, clean water, undernourishment, and employing country fixed
+effects, unobserved time-varying factors such as short-term
+institutional shifts, environmental shocks, and intra-country inequality
+remain unaccounted for and may still bias the estimates.</li>
+<li><strong>Simultaneity and Reverse Causality:</strong> Health outcomes
+and healthcare spending are simultaneously determined; healthier
+populations might afford to invest differently in health, and aging
+populations require higher expenditures. While a 5-year lag for
 education partially mitigates reverse causality for human capital, it
 does not fully resolve endogeneity. An Instrumental Variable (IV)
 approach could theoretically isolate the causal effects, but identifying
 a global, highly relevant, and strictly exogenous instrument for health
-expenditure is practically unfeasible in this context. * <em>Sample
-Selection Bias:</em> The exclusion of observations with missing values
-introduces a risk of sample selection bias. In cross-country macro
-panels, missing data is rarely completely at random; it
-disproportionately affects lower-income nations or countries with weaker
-statistical capacity. Consequently, our final sample may overrepresent
-wealthier or more stable countries, potentially skewing the estimated
-coefficients. * <em>Misspecification:</em> The reliance on linear and
+expenditure is practically unfeasible in this context.</li>
+<li><strong>Sample Selection Bias:</strong> The exclusion of
+observations with missing values introduces a risk of sample selection
+bias. In cross-country macro panels, missing data is rarely completely
+at random; it disproportionately affects lower-income nations or
+countries with weaker statistical capacity. Consequently, our final
+sample may overrepresent wealthier or more stable countries, potentially
+skewing the estimated coefficients.</li>
+<li><strong>Misspecification:</strong> The reliance on linear and
 log-linear functional forms assumes a specific structural relationship.
 The true underlying mechanisms governing health outcomes may involve
 complex non-linearities or dynamic temporal lags not fully captured by
-our current specification. * <em>Measurement Error in the
-Regressor:</em> Cross-country indicators are aggregated from distinct
-national statistical systems. Inconsistencies in how health expenditure
-or education enrollment is defined and reported locally can introduce
-measurement error, attenuating the estimated coefficients toward zero. *
-<em>Heteroskedasticity &amp; Serial Correlation:</em> Diagnostic tests
-detected both issues, which are inherent in macro-panels. All inferences
-are therefore strictly based on heteroskedasticity-robust and clustered
-standard errors at the country level (e.g., utilizing
-<code>cluster = &quot;country&quot;</code> in the empirical execution).</p>
+our current specification.</li>
+<li><strong>Measurement Error in the Regressor:</strong> Cross-country
+indicators are aggregated from distinct national statistical systems.
+Inconsistencies in how health expenditure or education enrollment is
+defined and reported locally can introduce measurement error,
+attenuating the estimated coefficients toward zero.</li>
+<li><strong>Heteroskedasticity &amp; Serial Correlation:</strong>
+Diagnostic tests detected both issues, which are inherent in
+macro-panels. All inferences are therefore strictly based on
+heteroskedasticity-robust and clustered standard errors at the country
+level (e.g., utilizing <code>cluster = &quot;country&quot;</code> in the empirical
+execution).</li>
+</ul>
 <p><strong>External Validity:</strong> While the large panel of 105
 countries improves the generalizability of our findings, the estimated
 coefficients represent average global associations. The precise impact
