@@ -534,12 +534,16 @@ model:</p>
 \log(HealthExp_{it}) + \beta_2 \log(GDPpc_{it}) + \beta_3
 Undernourishment_{it} + \beta_4 CleanWater_{it} +
 \varepsilon_{it}\]</span></p>
-<p>Where: * <strong>LifeExp</strong> is life expectancy at birth; *
-<strong>HealthExp</strong> is health expenditure per capita; *
-<strong>GDPpc</strong> is GDP per capita (PPP adjusted); *
-<strong>Undernourishment</strong> measures the prevalence of
-undernourishment; * <strong>CleanWater</strong> measures access to
-safely managed drinking water.</p>
+<p>Where:</p>
+<ul>
+<li><strong>LifeExp</strong> is life expectancy at birth;</li>
+<li><strong>HealthExp</strong> is health expenditure per capita;</li>
+<li><strong>GDPpc</strong> is GDP per capita (PPP adjusted);</li>
+<li><strong>Undernourishment</strong> measures the prevalence of
+undernourishment;</li>
+<li><strong>CleanWater</strong> measures access to safely managed
+drinking water.</li>
+</ul>
 <p>To address Secondary Research Question 1, we add a lagged measure of
 education:</p>
 <p><span class="math display">\[LifeExp_{it} = \beta_0 + \beta_1
@@ -634,13 +638,16 @@ limitations inherent in observational data.</p>
 <h2>4. Data and Descriptive Statistics</h2>
 <div id="data-sources-and-sample-description" class="section level3">
 <h3>4.1 Data Sources and Sample Description</h3>
-<p>The analysis combines information from two different sources: 1.
-<strong>Kaggle Dataset:</strong> Contains information on countries’ life
-expectancy, prevalence of undernourishment, geographical region, and
-income group classification. 2. <strong>World Development Indicators
-(WDI) - World Bank:</strong> Data on Current Health Expenditure per
-Capita, Secondary School Enrollment Rate, Access to Clean Drinking
-Water, and GDP per Capita (PPP-adjusted).</p>
+<p>The analysis combines information from two different sources:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Kaggle Dataset:</strong> Contains information on countries’
+life expectancy, prevalence of undernourishment, geographical region,
+and income group classification.</li>
+<li><strong>World Development Indicators (WDI) - World Bank:</strong>
+Data on Current Health Expenditure per Capita, Secondary School
+Enrollment Rate, Access to Clean Drinking Water, and GDP per Capita
+(PPP-adjusted).</li>
+</ol>
 <p>The two datasets were merged using the country ISO code and year,
 generating a country-year panel dataset. The timeframe spans from 2000
 to 2019. After merging, removing missing values, and constructing the
